@@ -1,6 +1,6 @@
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
-import time
+
 
 url = 'https://www.inshorts.com/en/read'
 uClient = uReq(url)
@@ -11,7 +11,6 @@ page_soup = soup(page_html,"html.parser")
 
 title = page_soup.findAll("div",{"class":"news-card-title news-right-box"})
 read_more = page_soup.findAll("div",{"class":"read-more"})
-
 
 i = 0
 for i in range(len(title)):
