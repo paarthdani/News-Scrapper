@@ -1,3 +1,6 @@
+# Created By Parth Dani
+# Date : 10/04/2020
+
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
